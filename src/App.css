@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+h1 {
+  font-family: "Lavishly Yours", serif;
+  font-size: 5.2em;
+  line-height: 0.1;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -1,7 +1,16 @@
-
 //import * as Yup from "yup";
-//import { Formik } from 'formik';
+import css from "./SearchBox.module.css";
 
-export default function  SearchBox(){
-
+export default function SearchBox({ inputValue, handleChange }) {
+  return (
+    <div className={css.searchBox}>
+      <h3>Find contacts by name {inputValue}</h3>
+      <input
+        type="text"
+        value={inputValue ?? "Enter name to search"}
+        onChange={(e) => handleChange(e.target.value)}
+        className={css.searchInput}
+      ></input>
+    </div>
+  );
 }
